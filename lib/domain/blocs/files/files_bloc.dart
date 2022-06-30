@@ -4,8 +4,6 @@ import 'dart:io';
 // Package imports:
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
-// Project imports:
 import 'package:pdf_collage/data/repositories/data_pdf_repository.dart';
 import 'package:pdf_collage/domain/blocs/images/image_bloc.dart';
 

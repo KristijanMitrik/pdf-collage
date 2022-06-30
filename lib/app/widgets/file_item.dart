@@ -3,17 +3,14 @@ import 'dart:io';
 
 // Flutter imports:
 import 'package:flutter/material.dart';
-
 // Package imports:
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
 import 'package:path/path.dart';
-import 'package:share_plus/share_plus.dart';
-import 'package:styled_widget/styled_widget.dart';
-
-// Project imports:
 import 'package:pdf_collage/app/widgets/easy_text.dart';
 import 'package:pdf_collage/device/utils/utils.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:styled_widget/styled_widget.dart';
 
 class FileItem extends HookWidget {
   final int index;

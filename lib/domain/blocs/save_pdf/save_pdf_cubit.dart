@@ -2,8 +2,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:image_picker/image_picker.dart';
-
-// Project imports:
 import 'package:pdf_collage/data/repositories/data_pdf_repository.dart';
 import 'package:pdf_collage/domain/blocs/files/files_bloc.dart';
 import 'package:pdf_collage/domain/blocs/images/image_bloc.dart';
@@ -12,9 +10,11 @@ part 'save_pdf_state.dart';
 
 class SavePdfCubit extends Cubit<SavePdfState> {
   final DataPdfRepository pdfRepository;
-  SavePdfCubit(this.pdfRepository) : super(SavePdfInitial());
+  final ImageBloc imagebloc;
+  final FilesBloc filesBloc;
+  SavePdfCubit(this.pdfRepository, this.filesBloc, this.imagebloc) : super(SavePdfInitial());
 
-  Future<void> savePdf(List<XFile> images, ImageBloc imagebloc, FilesBloc filesBloc) async {
+  Future<void> savePdf(List<XFile> images) async {
     try {
       emit(SavePdfLodinng());
       final res = await pdfRepository.createPdf(images);

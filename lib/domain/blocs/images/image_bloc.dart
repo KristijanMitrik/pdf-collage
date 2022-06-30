@@ -1,12 +1,9 @@
 // Flutter imports:
-import 'package:flutter/material.dart';
-
 // Package imports:
 import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-
-// Project imports:
 import 'package:pdf_collage/device/repositories/device_pick_images_repository.dart';
 
 part 'image_event.dart';

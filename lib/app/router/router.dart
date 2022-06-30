@@ -4,8 +4,6 @@ import 'dart:io';
 // Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-
-// Project imports:
 import 'package:pdf_collage/app/pages/details_screen.dart';
 import 'package:pdf_collage/app/pages/home_screen.dart';
 import 'package:pdf_collage/app/providers/providers.dart';

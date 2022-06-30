@@ -3,8 +3,6 @@ import 'dart:async';
 
 // Package imports:
 import 'package:image_picker/image_picker.dart';
-
-// Project imports:
 import 'package:pdf_collage/domain/repositories/pick_image_repository.dart';
 
 class DevicePickImagesRepository implements PickImageRepository {

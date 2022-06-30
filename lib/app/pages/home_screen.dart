@@ -1,7 +1,6 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
-
-// Project imports:
+// Package imports:
 import 'package:pdf_collage/app/pages/files_screen.dart';
 import 'package:pdf_collage/app/pages/images_screen.dart';
 import 'package:pdf_collage/app/widgets/nav_bar.dart';

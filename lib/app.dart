@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:flutter_hooks/flutter_hooks.dart';
-
-// Project imports:
 import 'package:pdf_collage/app/router/router.dart';
 
 class App extends HookWidget {

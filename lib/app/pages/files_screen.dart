@@ -3,12 +3,9 @@ import 'dart:io';
 
 // Flutter imports:
 import 'package:flutter/material.dart';
-
 // Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-
-// Project imports:
 import 'package:pdf_collage/app/widgets/file_item.dart';
 import 'package:pdf_collage/domain/blocs/files/files_bloc.dart';
 import 'package:pdf_collage/domain/blocs/images/image_bloc.dart';

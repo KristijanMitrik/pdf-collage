@@ -1,16 +1,12 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
-
 // Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:styled_widget/styled_widget.dart';
-
-// Project imports:
 import 'package:pdf_collage/app/providers/providers.dart';
 import 'package:pdf_collage/app/widgets/easy_text.dart';
-import 'package:pdf_collage/domain/blocs/files/files_bloc.dart';
 import 'package:pdf_collage/domain/blocs/images/image_bloc.dart';
 import 'package:pdf_collage/domain/blocs/save_pdf/save_pdf_cubit.dart';
+import 'package:styled_widget/styled_widget.dart';
 
 void showConfirmFileCreationDialog({required BuildContext context}) {
   showDialog(
@@ -111,7 +107,7 @@ class _ConfirmFileCreationView extends StatelessWidget {
                             color: Colors.blueAccent,
                           ),
                           onPressed: () {
-                            context.read<SavePdfCubit>().savePdf(images, ctx.read<ImageBloc>(), ctx.read<FilesBloc>());
+                            context.read<SavePdfCubit>().savePdf(images);
                           },
                         ),
                       ],

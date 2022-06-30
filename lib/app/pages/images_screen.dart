@@ -1,19 +1,16 @@
 // Dart imports:
 import 'dart:io';
 
-// Flutter imports:
-import 'package:flutter/material.dart';
-
 // Package imports:
 import 'package:badges/badges.dart';
 import 'package:collection/collection.dart';
+// Flutter imports:
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:reorderables/reorderables.dart';
-
-// Project imports:
 import 'package:pdf_collage/app/dialogs/confirm_file_creation.dart';
 import 'package:pdf_collage/app/widgets/images_app_bar.dart';
 import 'package:pdf_collage/domain/blocs/images/image_bloc.dart';
+import 'package:reorderables/reorderables.dart';
 
 class ImagesScreen extends StatelessWidget {
   const ImagesScreen({Key? key}) : super(key: key);
